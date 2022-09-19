@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 76px;
+    box-shadow: 0px 4px 7px rgb(41 180 117 / 10%);
+    justify-content: space-around;
+    background: #fff;
+    align-items: center;
+    z-index: 999;
+  }
+  .header img {
+    width: 145px;
+    height: 33px;
+    margin-left: -40px;
+  }
+  .header a,
+  .header select {
+    text-decoration: none;
+    color: #16252d;
+    margin: 6px;
+  }
+  .header .home{
+      color: #29b475;
+  }
+  .header a:hover,
+  .header select:hover {
+    color: #29b475;
+  }
+  .header select {
+    width: 79px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .header .list {
+    margin-left: -53px;
+  }
+  .header button {
+    background-color: #29b475;
+    border: none;
+    padding: 10px 20px !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    border-radius: 3px;
+    margin-right: -70px;
+    color: #fff;
+    width: 158px;
+    font-weight: 799;
+    font-family: "Poppins", sans-serif;
+  }
+  .header button:hover,
+  .banner .content .btn button:hover {
+    background-color: green;
+  }
+  .banner {
+    padding-top: 160px;
+    background: url("https://raw.githubusercontent.com/Wajhulhuda/geeksterHome/main/hero.jpg") no-repeat center center/cover;
+    height: 480px;
+    margin-left: 190px;
+  }
+  .banner .content {
+    width: 50%;
+    height: 100%;
+    margin-left: -122px;
+    margin-top: -55px;
+  }
+  .banner .content .item .first{
+    font-weight: 900;
+    font-size: 45px;
+  }
+  .banner .content .item .first span{
+    color: #29b475;
+  }
+  .banner .content .item .second{
+    font-weight: 400;
+    font-size: 26px;
+    color: #737c81;
+  }
+  .banner .content .pay{
+      width: 76%;
+  }
+  .banner .content .item .second span{
+      font-weight: 700;
+    
+  }
+  .banner .content .btn{
+      margin-top: 64px;
+  }
+  .banner .content .btn button{
+    background-color: #29b475;
+    border: none;
+    padding: 10px 20px !important;
+    font-size: 21px !important;
+    line-height: 20px !important;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+      0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    border-radius: 3px;
+    color: #fff;
+    width: 270px;
+    height: 60px;
+    font-weight: 799;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .place{
+      width:90%;
+      margin-top: 500px;
+      margin: auto;
+      margin-bottom: 30px;
+  }
+  .place .card{
+      display: flex;
+        align-items: center;
+      justify-content: center;
+      grid-gap: 20px;
+  }
+  .place .card .item{
+      width: 400px;
+      height: 170PX;
+      border-radius: 5PX;
+      padding: 20px;
+      
+  }
+  .place .card .item1{
+      background-color: #e9f7f1;;
+
+  }
+ 
+  .place .card .item2{
+      background-color: #fff6ea;;
+  }
+  .place .card .item3{
+      background-color: #eaf6f9;;
+  }
+  .heading{
+      text-align: center;
+      font-weight: 600;
+    font-size: clamp(1.9rem,4vw,2.125rem);
+        line-height: 51px;
+  }
+  .heading span{
+      color: #29b475;
+  }
+  .place .card .item .first{
+      display: flex;
+      margin-top: -30px;
+      justify-content: space-between;
+  }
+  .place .card .item .first p{
+      font-size: 36px;
+      font-weight: 700;
+        color: #29b475;
+  }
+  .place .card .item .p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #16252d;
+    text-align: left;
+    margin-top: -14px;
+
+  }
+    .place .card .item .des{
+        color: #737C81;
+        text-align: left;
+        font-size: 12px;
+    }
+    .place .card .item2 .first p{
+        color: #FF9900;
+    }
+    .place .card .item3 .first p{
+        color: #22ADCF;
+    }
+
+    .what{
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    }
+    .what img{
+        width: 70px;
+      
+        height: 70px;
+    }
+   
+</style>
+</html>
+</head>>
+<body>
+    <nav class="header">
+    <div class="item">
+        <img src="https://wajhulhuda.github.io/geeksterHome/geekster.png" width="250px" height="250px">
+    </div>
+    <div class="item list">
+        <a class="home" href="">Home</a>
+        <select name="Courses" id="course">
+          <option value="course">Courses</option>
+          <option value="fullstack">Full Stack Web Development</option>
+          <option value="career">Career Kickstarter</option>
+        </select>
+
+        <a href="">Hire Talent</a>
+        <a href="">Blog</a>
+        <a href="">ISA</a>
+      </div>
+      <div class="item">
+        <button>Request Call Back</button>
+      </div>
+    </nav>
+    <section class="banner">
+        <div class="content">
+          <div class="item">
+            <p class="first">Build your dream <span> career in tech</span></p>
+          </div>
+          <div class="item pay">
+            <p class="second">
+              Get trained for <span> top tech jobs</span> by industry experts and <span>pay</span> ₹ <span>0</span> 
+              until you land a job
+            </p>
+          </div>
+          <div class="btn">
+            <button>Apply Now For Free</button>
+          </div>
+        </div>
+      </section>
+      <section class="place">
+        <div class="heading">
+            <p>Our students <span> are hired </span>by 300+ companies</p>
+        </div>
+        <div class="card">
+            <div class="item item1">
+                <div class="first">
+                    <div>
+                        <p>92%+</p>
+                    </div>
+                    <img src="placement.svg" alt="">
+                </div>
+                <p class="p">Placement Rate</p>
+                <p class="des">* For the students who complete the program satisfactorily</p>
+            </div>
+            <div class="item item2">
+                <div class="first">
+                    <div>
+                        <p>₹ 7.43 LPA</p>
+                    </div>
+                    <img src="salary.svg" alt="">
+                </div>
+                <p class="p">Placement Rate</p>
+              
+            </div>
+            <div class="item item3">
+                <div class="first">
+                    <div>
+                        <p>₹ 21 LPA</p>
+                    </div>
+                    <img src="highSalary.svg" alt="">
+                </div>
+                <p class="p">Placement Rate</p>
+               
+            </div>
+        </div>
+    </section>
+    <div class="what">
+     
+        <img src="https://wajhulhuda.github.io/geeksterHome/WhatsApp.svg.webp" alt="">
+     
+    </div>
+</body>
+</html>
